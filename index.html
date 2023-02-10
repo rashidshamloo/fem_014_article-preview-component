@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Preview Component</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body onload="initSharePanel()">
+    <main>
+      <article class="container">
+        <div class="article-image">
+          <img src="images/drawers.jpg" alt="Furniture" aria-hidden="true" />
+        </div>
+        <div class="article-info">
+          <h1>
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+          <div class="author-container">
+            <div class="author">
+              <div class="avatar"></div>
+              <div class="article-name-date">
+                <p>Michelle Appleton</p>
+                <p>28 Jun 2020</p>
+              </div>
+            </div>
+            <div id="share-box">
+              <p>Share</p>
+              <a href="javascript:void(0);" title="Facebook"
+                ><img src="images/icon-facebook.svg" alt="Facebook"
+              /></a>
+              <a href="javascript:void(0);" title="Twitter"
+                ><img src="images/icon-twitter.svg" alt="Twitter"
+              /></a>
+              <a href="javascript:void(0);" title="Pinterest"
+                ><img src="images/icon-pinterest.svg" alt="Pinterest"
+              /></a>
+            </div>
+            <button class="share-button" onclick="toggleSharePanel()">
+              <div class="share-arrow"></div>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>Developed by Rashid Shamloo</p>
+      <p class="footer-icon">
+        <a
+          href="https://rashidshamloo.github.com"
+          title="GitHub"
+          target="_blank"
+          ><i class="bi-github"></i
+        ></a>
+        |
+        <a
+          href="https://www.linkedin.com/in/rashid-shamloo/"
+          title="Linked-in"
+          target="_blank"
+          ><i class="bi-linkedin"></i
+        ></a>
+        |
+        <a
+          href="https://twitter.com/rashidshamloo"
+          title="Twitter"
+          target="_blank"
+          ><i class="bi-twitter"></i
+        ></a>
+      </p>
+    </footer>
+  </body>
+</html>
